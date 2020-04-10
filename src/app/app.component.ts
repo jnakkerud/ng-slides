@@ -10,6 +10,15 @@ export class AppComponent {
 
   content = 'content';
 
+  slides = [
+    {
+      url: 'https://source.unsplash.com/1600x900/?nature,water'
+    },
+    {
+      url: 'https://source.unsplash.com/1600x1600/?nature,forest'
+    }
+  ];
+
   onForward() {
     this.content = 'forward';
   }

@@ -1,0 +1,27 @@
+.carousel {
+    width: 100%;
+    height: 100%;
+    min-height: var(--min-height-carousel);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+.slides {
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+    list-style: none;
+    margin: var(--unit-1);
+    border: 2px solid var(--color-brand-1);
+}
+
+.slide {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
