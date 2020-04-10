@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nak-slideshow';
+
+  content = 'content';
+
+  onForward() {
+    this.content = 'forward';
+  }
+
+  onBack() {
+    this.content = 'back';
+  }
 }

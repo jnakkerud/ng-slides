@@ -1,11 +1,27 @@
 <div class="container">
   
   <div class="main">
-    content
+    {{content}}
   </div>
   
-  <div class="nav">
-    <nav-bar></nav-bar>
+  <div class="nav mat-drawer-container">
+    <div class="btn-group">
+      <div class="nav-control">
+        <button mat-fab aria-label="arrow forward" (click)="onForward()">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+      </div>
+      <div class="nav-control">
+        <button mat-fab aria-label="arrow back" (click)="onBack()">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </div>
+      <div class="nav-control">
+        <button mat-fab aria-label="information">
+          <mat-icon>info</mat-icon>
+        </button>
+      </div>
+    </div>
   </div>
   
 </div>
