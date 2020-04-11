@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'nak-slideshow'`, () => {
+  it(`should have as title 'ng-slides'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nak-slideshow');
+    expect(app.title).toEqual('ng-slides');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('nak-slideshow app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng-slides app is running!');
   });
 });

@@ -10,6 +10,7 @@ import { DataService, SlidesModel } from './data.service';
 export class AppComponent implements OnInit {
 
   model: SlidesModel;
+  title = 'ng-slides';
 
   constructor(private dataService: DataService) { }
 
