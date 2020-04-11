@@ -1,7 +1,7 @@
 <div class="container">
   
   <div class="main">
-    <app-image-slider #slider animation="slide" [slides]="slides" [slideTemplateRef]="slide"></app-image-slider>
+    <app-image-slider #slider animation="slide" [slides]="model.slides" [slideTemplateRef]="slide"></app-image-slider>
     <ng-template #slide let-slide>
       <div [ngStyle]="{
           'background-size': 'cover',

@@ -143,7 +143,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     }
 
     getAnimationSlideState(index: number) {
-        return index === this.activeSlides.current ? 
+        return index === this.activeSlides.current ?
             'current' : index === this.activeSlides.next ? 'next' : index === this.activeSlides.previous ? 'previous' : '';
     }
 

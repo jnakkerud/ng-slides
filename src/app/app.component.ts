@@ -1,29 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { DataService, SlidesModel } from './data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'nak-slideshow';
+export class AppComponent implements OnInit {
 
-  content = 'content';
+  model: SlidesModel;
 
-  slides = [
-    {
-      url: 'https://source.unsplash.com/1600x900/?nature,water'
-    },
-    {
-      url: 'https://source.unsplash.com/1600x1600/?nature,forest'
-    }
-  ];
+  constructor(private dataService: DataService) { }
 
-  onForward() {
-    this.content = 'forward';
+  ngOnInit(): void {
+    this.initApp();
   }
 
-  onBack() {
-    this.content = 'back';
+  async initApp() {
+    this.model = await this.dataService.getSlidesModel();
   }
+
 }
