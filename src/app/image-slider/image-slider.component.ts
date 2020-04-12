@@ -2,6 +2,7 @@ import {
     Component,
         Input,
         OnDestroy,
+        HostListener,
         TemplateRef,
         ChangeDetectionStrategy,
         OnInit,
@@ -16,6 +17,11 @@ import {
     animate,
     transition
 } from '@angular/animations';
+
+export enum KEY_CODE {
+    RIGHT_ARROW = 'ArrowRight',
+    LEFT_ARROW = 'ArrowLeft'
+}
 
 export enum Direction {
     Next,
@@ -90,6 +96,18 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     }
     set activeSlides(activeSlides: ActiveSlides) {
         this._activeSlides = activeSlides;
+    }
+
+    @HostListener('document:keydown', ['$event'])
+    handleKeyboardEvent(event: KeyboardEvent) {
+        switch (event.key) {
+            case KEY_CODE.RIGHT_ARROW:
+                this.select(this.activeSlides.next);
+                break;
+            case KEY_CODE.LEFT_ARROW:
+                this.select(this.activeSlides.previous);
+                break;
+        }
     }
 
     constructor(private cd: ChangeDetectorRef, private differs: KeyValueDiffers) { }
