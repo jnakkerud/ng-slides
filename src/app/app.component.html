@@ -1,7 +1,12 @@
-<div class="container">
-  
-  <div class="main" [style.flex]="showInfo ? 80 : 1">
-    <app-image-slider #slider animation="slide" [slides]="model.slides" [slideTemplateRef]="slide" (slideChange)="onSlideChange($event)"></app-image-slider>
+<div *ngIf="!isLoading; else showLoading" class="container">
+  <div class="main" [style.flex]="showInfo ? 80 : 1">  
+    <app-image-slider #slider 
+      [animation]="sliderConfig.animation" 
+      [slides]="slidesModel.slides" 
+      [autoPlayDuration]="sliderConfig.autoPlayDuration"
+      [shuffle]="sliderConfig.shuffle"
+      [slideTemplateRef]="slide"
+      (slideChange)="onSlideChange($event)"></app-image-slider>
     <ng-template #slide let-slide>
       <div [ngStyle]="{
           'background-size': 'cover',
@@ -13,8 +18,7 @@
       </div>
     </ng-template>
   </div>
-  
-  <div *ngIf="!model.imageSliderConfig.hideNavigation" class="nav mat-drawer-container" [style.flex]="showInfo ? 20 : 0">
+  <div *ngIf="!sliderConfig.hideNavigation" class="nav mat-drawer-container" [style.flex]="showInfo ? 20 : 0">
     <div class="nav-content">
       <ng-container *ngIf="showInfo">
         <div class="info-content">
@@ -48,5 +52,10 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
 </div>
+<ng-template #showLoading>
+  <div class="container">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

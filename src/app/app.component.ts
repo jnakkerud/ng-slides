@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService, SlidesModel, DataUrl } from './data.service';
+import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
 import { ActiveSlides } from './image-slider/image-slider.component';
 
-function titleFromUrl(url: string ): string {
+function titleFromUrl(url: string): string {
   return url.substring(url.lastIndexOf('/') + 1);
 }
 
@@ -14,17 +14,30 @@ function titleFromUrl(url: string ): string {
 })
 export class AppComponent implements OnInit {
 
-  model: SlidesModel;
+  slidesModel: SlidesModel;
   title = 'ng-slides';
   showInfo = false;
 
   slideInfo: DataUrl;
 
+  isLoading = true;
+
+  // tslint:disable-next-line: variable-name
+  private _sliderConfig: ImageSliderConfig;
+  get sliderConfig() {
+    return this._sliderConfig;
+  }
+  set sliderConfig(sliderConfig: ImageSliderConfig) {
+    this._sliderConfig = sliderConfig;
+  }
+
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.dataService.getSlidesModel().then(m => {
-      this.model = m;
+      this.slidesModel = m;
+      this.sliderConfig = m.imageSliderConfig;
+      this.isLoading = false;
     });
   }
 
@@ -33,7 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   onSlideChange(activeSlides: ActiveSlides) {
-    const current = this.model.slides[activeSlides.current];
+    const current = this.slidesModel.slides[activeSlides.current];
 
     this.slideInfo = {
       url: current.url,
