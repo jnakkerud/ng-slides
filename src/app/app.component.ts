@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService, SlidesModel } from './data.service';
+import { DataService, SlidesModel, DataUrl } from './data.service';
+import { ActiveSlides } from './image-slider/image-slider.component';
+
+function titleFromUrl(url: string ): string {
+  return url.substring(url.lastIndexOf('/') + 1);
+}
 
 @Component({
   selector: 'app-root',
@@ -11,15 +16,29 @@ export class AppComponent implements OnInit {
 
   model: SlidesModel;
   title = 'ng-slides';
+  showInfo = false;
+
+  slideInfo: DataUrl;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.initApp();
+    this.dataService.getSlidesModel().then(m => {
+      this.model = m;
+    });
   }
 
-  async initApp() {
-    this.model = await this.dataService.getSlidesModel();
+  toggleInfo() {
+    this.showInfo = !this.showInfo;
   }
 
+  onSlideChange(activeSlides: ActiveSlides) {
+    const current = this.model.slides[activeSlides.current];
+
+    this.slideInfo = {
+      url: current.url,
+      title: current.title || titleFromUrl(current.url),
+      description: current.description || ''
+    };
+  }
 }

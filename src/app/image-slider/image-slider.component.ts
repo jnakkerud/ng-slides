@@ -1,14 +1,16 @@
 import {
     Component,
-        Input,
-        OnDestroy,
-        HostListener,
-        TemplateRef,
-        ChangeDetectionStrategy,
-        OnInit,
-        ChangeDetectorRef,
-        KeyValueDiffer,
-        KeyValueDiffers
+    Input,
+    OnDestroy,
+    HostListener,
+    TemplateRef,
+    ChangeDetectionStrategy,
+    OnInit,
+    ChangeDetectorRef,
+    KeyValueDiffer,
+    KeyValueDiffers,
+    Output,
+    EventEmitter
 } from '@angular/core';
 import {
     trigger,
@@ -77,6 +79,8 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     @Input()
     slideTemplateRef: TemplateRef<any>;
 
+    @Output() slideChange = new EventEmitter<ActiveSlides>();
+
     currentInterval;
     differ: KeyValueDiffer<ActiveSlides, any>;
 
@@ -115,6 +119,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         if (this.slides) {
             this.activeSlides = this.getPreviousCurrentNextIndexes(0);
+            this.slideChange.emit(this.activeSlides);
             this.differ = this.differs.find(this.activeSlides).create();
             if (this.slides.length > 1 && this.autoPlayDuration > 0) {
                 this.startTimer();
@@ -136,6 +141,8 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
         if (this.differ.diff(this.activeSlides)) {
             this.cd.detectChanges();
         }
+
+        this.slideChange.emit(this.activeSlides);
     }
 
     getDirection(oldIndex: number, newIndex: number): Direction {

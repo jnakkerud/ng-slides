@@ -1,7 +1,7 @@
 <div class="container">
   
-  <div class="main">
-    <app-image-slider #slider animation="slide" [slides]="model.slides" [slideTemplateRef]="slide"></app-image-slider>
+  <div class="main" [style.flex]="showInfo ? 80 : 1">
+    <app-image-slider #slider animation="slide" [slides]="model.slides" [slideTemplateRef]="slide" (slideChange)="onSlideChange($event)"></app-image-slider>
     <ng-template #slide let-slide>
       <div [ngStyle]="{
           'background-size': 'cover',
@@ -14,24 +14,39 @@
     </ng-template>
   </div>
   
-  <div class="nav mat-drawer-container">
-    <div class="btn-group">
-      <div class="nav-control">
-        <button mat-fab aria-label="arrow forward" (click)="slider.select(slider.activeSlides.next)">
-          <mat-icon>arrow_forward</mat-icon>
-        </button>
-      </div>
-      <div class="nav-control">
-        <button mat-fab aria-label="arrow back" (click)="slider.select(slider.activeSlides.previous)">
-          <mat-icon>arrow_back</mat-icon>
-        </button>
-      </div>
-      <div class="nav-control">
-        <button mat-fab aria-label="information">
-          <mat-icon>info</mat-icon>
-        </button>
+  <div *ngIf="!model.imageSliderConfig.hideNavigation" class="nav mat-drawer-container" [style.flex]="showInfo ? 20 : 0">
+    <div class="nav-content">
+      <ng-container *ngIf="showInfo">
+        <div class="info-content">
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-card-title>{{slideInfo.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                {{slideInfo.description}}
+              </p>
+            </mat-card-content>
+          </mat-card>          
+        </div>
+      </ng-container>
+      <div class="btn-group">
+        <div class="nav-control">
+          <button mat-fab aria-label="arrow forward" (click)="slider.select(slider.activeSlides.next)">
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        </div>
+        <div class="nav-control">
+          <button mat-fab aria-label="arrow back" (click)="slider.select(slider.activeSlides.previous)">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        </div>
+        <div class="nav-control">
+          <button mat-fab aria-label="information" (click)="toggleInfo()">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  
+    </div>
 </div>

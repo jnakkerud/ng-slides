@@ -2,18 +2,10 @@
     height: 100%;
     display: flex;
 }
-  
-.nav {
-    width: 100px;
-    flex: 0;
-}
-
-.main {
-    flex: 1;  
-}
 
 .btn-group {
     margin-top: 40px;
+    flex: 0;  
 }
 
 .btn-group button {
@@ -22,4 +14,14 @@
 
 .nav-control {
     padding: 8px;
+}
+
+.nav-content {
+    display: flex;
+}
+
+.info-content {
+    //width: 64px;
+    padding: 8px;
+    flex: 1;
 }

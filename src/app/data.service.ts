@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 export interface DataUrl {
     url: string;
+    title?: string;
+    description?: string;
 }
 
 export interface ImageSliderConfig {
