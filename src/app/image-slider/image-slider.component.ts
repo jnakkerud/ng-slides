@@ -41,6 +41,26 @@ export interface ActiveSlides {
     next: number;
 }
 
+function shuffle(array) {
+    // tslint:disable-next-line: one-variable-per-declaration
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
 @Component({
     selector: 'app-image-slider',
     templateUrl: `image-slider.component.html`,
@@ -78,6 +98,8 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     @Input()
     slideTemplateRef: TemplateRef<any>;
+
+    @Input() shuffle = false;
 
     @Output() slideChange = new EventEmitter<ActiveSlides>();
 
@@ -118,6 +140,9 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
         if (this.slides) {
+            if (this.shuffle) {
+                this.slides = shuffle(this.slides);
+            }
             this.activeSlides = this.getPreviousCurrentNextIndexes(0);
             this.slideChange.emit(this.activeSlides);
             this.differ = this.differs.find(this.activeSlides).create();

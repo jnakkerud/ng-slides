@@ -11,7 +11,7 @@ export interface ImageSliderConfig {
     hideNavigation?: boolean;
     animation?: string; // slide | fade
     autoPlayDuration?: number;
-    randomize?: boolean;
+    shuffle?: boolean;
 }
 
 export interface SlidesConfig {
@@ -32,7 +32,7 @@ export class SlidesModel {
             hideNavigation: false,
             animation: 'slide',
             autoPlayDuration: 0,
-            randomize: false
+            shuffle: false
         };
     }
 }
