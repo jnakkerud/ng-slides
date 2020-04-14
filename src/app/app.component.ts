@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
+import { SoundService } from './sound.service';
 import { ActiveSlides } from './image-slider/image-slider.component';
 
 function titleFromUrl(url: string): string {
@@ -31,12 +32,13 @@ export class AppComponent implements OnInit {
     this._sliderConfig = sliderConfig;
   }
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private soundService: SoundService) { }
 
   ngOnInit(): void {
     this.dataService.getSlidesModel().then(m => {
       this.slidesModel = m;
       this.sliderConfig = m.imageSliderConfig;
+      this.loadSound(m.sounds);
       this.isLoading = false;
     });
   }
@@ -53,5 +55,11 @@ export class AppComponent implements OnInit {
       title: current.title || titleFromUrl(current.url),
       description: current.description || ''
     };
+  }
+
+  loadSound(sounds: DataUrl[]) {
+    if (sounds) {
+      this.soundService.play(sounds);
+    }
   }
 }

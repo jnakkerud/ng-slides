@@ -12,6 +12,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { DataService } from './data.service';
+import { SoundService } from './sound.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { DataService } from './data.service';
     MatProgressSpinnerModule,
     MatIconModule
   ],
-  providers: [DataService],
+  providers: [DataService, SoundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
