@@ -1,27 +1,105 @@
-# NgSlides
+# ng-slides
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+Simple slideshow web application. 
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+Latest [Node.js](https://www.nodejs.org/) is installed.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**1. Install Angular CLI**:
+```
+npm install -g @angular/cli
+```
+**2. Run**:
+```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+```
+
+## Customize
+
+### Serve images from a local directory
+
+Create a slides-upload directory at the same level as the `ng-slides` project directory
+
+Put images in the directory. The images will be copied to /slides-data for the server runtime
+
+Create a json configuration file, i.e. slides-config.json
+
+Specify the image files to serve in the config file:
+
+```
+{
+    "slides": [
+        {
+            "url": "/slides-data/4946032222.jpg"
+        },
+        {
+            "url": "/slides-data/4977472554.jpg",
+            "title": "Central Park: ice skating",
+        },
+        {
+            "url": "/slides-data/4977563294.jpg"
+        }
+    ]
+}
+```
+
+Add the config file to the url: `http://localhost:4200/?config=/slides-data/slides-config.json` The url will need to be URL encoded before it can be pasted into the address bar of the browser.
+
+### Serve images remotely
+
+Image files can be also served remotely, just specify the url to the image:
+
+```
+{
+    "slides": [
+        {
+            "url": "https://source.unsplash.com/1600x900/?nature,water"
+        },
+        {
+            "url": "https://source.unsplash.com/1600x1600/?nature,forest",
+        },
+    ]
+}
+```
+
+The config file can also be specified from a remote location. Since `ng-slides` will be loading the config from another domain, [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) can be an issue. Either
+the remote server will need to allow Cross-Origin Resource Sharing or the config file will need to go through a proxy. 
+
+### Custom configuration
+
+Its possible to add additional configuration in the json config file.  For example add auto-play to the slideshow or adding sound to play in the background:
+
+```
+{
+    "slides": [
+        {
+            "url": "/slides-data/4946032222.jpg"
+        },
+        {
+            "url": "/slides-data/4977472554.jpg",
+            "title": "Central Park: ice skating",
+        },
+        {
+            "url": "/slides-data/4977563294.jpg"
+        }
+    ],
+    "sounds": [
+        {
+            "url": "/slides-data/favorite-tune.mp3"
+        },
+    ],
+   "imageSliderConfig": {
+        "autoPlayDuration": 5000,
+    }
+}
+```
+
+There are more config options available, see [data.service.ts](https://github.com/jnakkerud/ng-slides/blob/master/src/app/data.service.ts)
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
