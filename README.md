@@ -60,7 +60,7 @@ Image files can be also served remotely, just specify the url to the image:
         },
         {
             "url": "https://source.unsplash.com/1600x1600/?nature,forest",
-        },
+        }
     ]
 }
 ```
@@ -89,10 +89,10 @@ Its possible to add additional configuration in the json config file.  For examp
     "sounds": [
         {
             "url": "/slides-data/favorite-tune.mp3"
-        },
+        }
     ],
    "imageSliderConfig": {
-        "autoPlayDuration": 5000,
+        "autoPlayDuration": 5000
     }
 }
 ```
