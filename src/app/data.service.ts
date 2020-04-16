@@ -5,6 +5,7 @@ export interface DataUrl {
     url: string;
     title?: string;
     description?: string;
+    position?: string;     // background-position
 }
 
 export interface ImageSliderConfig {
