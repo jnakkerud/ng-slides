@@ -19,7 +19,7 @@
       </div>
     </ng-template>
   </div>
-  <div *ngIf="!sliderConfig.hideNavigation" class="nav mat-drawer-container" [style.flex]="showInfo ? 20 : 0">
+  <div *ngIf="!hideNavigation" class="nav mat-drawer-container" [style.flex]="showInfo ? 20 : 0">
     <div class="nav-content">
       <ng-container *ngIf="showInfo">
         <div class="info-content">

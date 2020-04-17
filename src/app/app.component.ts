@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
 import { SoundService } from './sound.service';
 import { ActiveSlides } from './image-slider/image-slider.component';
@@ -21,6 +23,7 @@ export class AppComponent implements OnInit {
 
   slideInfo: DataUrl;
 
+  hideNavigation = false;
   isLoading = true;
 
   // tslint:disable-next-line: variable-name
@@ -32,12 +35,28 @@ export class AppComponent implements OnInit {
     this._sliderConfig = sliderConfig;
   }
 
-  constructor(private dataService: DataService, private soundService: SoundService) { }
+  constructor(
+    private dataService: DataService,
+    private soundService: SoundService,
+    breakpointObserver: BreakpointObserver) {
+      breakpointObserver.observe([
+        Breakpoints.Handset,
+        Breakpoints.TabletPortrait
+      ]).subscribe(result => {
+        if (result.matches) {
+          // hide nav bar
+          this.hideNavigation = true;
+        } else {
+          this.hideNavigation = this.sliderConfig?.hideNavigation || false;
+        }
+      });
+    }
 
   ngOnInit(): void {
     this.dataService.getSlidesModel().then(m => {
       this.slidesModel = m;
       this.sliderConfig = m.imageSliderConfig;
+      this.hideNavigation = this.sliderConfig.hideNavigation;
       this.loadSound(m.sounds);
       this.isLoading = false;
     });
