@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
@@ -36,6 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   constructor(
+    iconRegistry: MatIconRegistry, sanitizer: DomSanitizer,
     private dataService: DataService,
     private soundService: SoundService,
     breakpointObserver: BreakpointObserver) {
@@ -50,7 +52,13 @@ export class AppComponent implements OnInit {
           this.hideNavigation = this.sliderConfig?.hideNavigation || false;
         }
       });
+
+      iconRegistry.addSvgIcon(
+        'info-icon',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/img/info-icon.svg'));
+
     }
+
 
   ngOnInit(): void {
     this.dataService.getSlidesModel().then(m => {
