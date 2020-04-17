@@ -26,7 +26,11 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {"glob": "**/*", "input": "../slides-upload", "output": "/slides-data/"}
+              {
+                "glob": "**/*",
+                "input": "../slides-upload",
+                "output": "/slides-data/"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
@@ -124,6 +128,10 @@
               "devServerTarget": "ng-slides:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
