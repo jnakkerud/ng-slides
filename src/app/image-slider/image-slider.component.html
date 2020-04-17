@@ -1,4 +1,6 @@
-<div class="carousel">
+<div class="carousel"
+	(touchstart)="swipe($event, 'start')"
+	(touchend)="swipe($event, 'end')">
 	<!-- slides -->
 	<ul class="slides">
 		<li class="slide" *ngFor="let slide of slides; let i = index;" [@slideState]="getAnimationSlideState(i)">

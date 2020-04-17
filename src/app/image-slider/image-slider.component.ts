@@ -106,6 +106,10 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     currentInterval;
     differ: KeyValueDiffer<ActiveSlides, any>;
 
+    // for swipe event
+    private swipeCoord?: [number, number];
+    private swipeTime?: number;
+
     // tslint:disable-next-line: variable-name
     private _direction: Direction = Direction.Next;
     get direction() {
@@ -211,4 +215,34 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
         }
     }
 
+    /**
+     * Swipe event handler
+     * Reference from https://stackoverflow.com/a/44511007/2067646
+     */
+    swipe(e: TouchEvent, when: string): void {
+        if (this.autoPlayDuration > 0) {
+            return;
+        }
+
+        const coord: [number, number] = [e.changedTouches[0].pageX, e.changedTouches[0].pageY];
+        const time = new Date().getTime();
+
+        if (when === 'start') {
+            this.swipeCoord = coord;
+            this.swipeTime = time;
+        } else if (when === 'end') {
+            const direction = [coord[0] - this.swipeCoord[0], coord[1] - this.swipeCoord[1]];
+            const duration = time - this.swipeTime;
+
+            if (duration < 1000 //
+                && Math.abs(direction[0]) > 30 // Long enough
+                && Math.abs(direction[0]) > Math.abs(direction[1] * 3)) { // Horizontal enough
+                if (direction[0] < 0) {
+                    this.select(this.activeSlides.next);
+                } else {
+                    this.select(this.activeSlides.previous);
+                }
+            }
+        }
+    }
 }
