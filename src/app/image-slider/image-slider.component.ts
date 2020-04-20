@@ -20,6 +20,8 @@ import {
     transition
 } from '@angular/animations';
 
+import { DataUrl } from '../data.service';
+
 export enum KEY_CODE {
     RIGHT_ARROW = 'ArrowRight',
     LEFT_ARROW = 'ArrowLeft'
@@ -88,7 +90,7 @@ function shuffle(array) {
 export class ImageSliderComponent implements OnInit, OnDestroy {
 
     @Input()
-    slides;
+    slides: DataUrl[];
 
     @Input()
     animation: Animation = Animation.Fade;
@@ -162,16 +164,16 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     }
 
     select(index: number): void {
-        this.resetTimer();
-        this.activeSlides = this.getPreviousCurrentNextIndexes(index);
-        this.direction = this.getDirection(this.activeSlides.current, index);
-        this.startTimer();
-
-        if (this.differ.diff(this.activeSlides)) {
-            this.cd.detectChanges();
-        }
-
-        this.slideChange.emit(this.activeSlides);
+        Promise.resolve(null).then(() => {
+            this.resetTimer();
+            this.activeSlides = this.getPreviousCurrentNextIndexes(index);
+            this.slideChange.emit(this.activeSlides);
+            this.direction = this.getDirection(this.activeSlides.current, index);
+            this.startTimer();
+            if (this.differ.diff(this.activeSlides)) {
+                this.cd.detectChanges();
+            }
+        });
     }
 
     getDirection(oldIndex: number, newIndex: number): Direction {
@@ -245,4 +247,21 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
             }
         }
     }
+
+    slideContext(slide: DataUrl, index: number): DataUrl {
+        if (!slide.urlExp) {
+            // provide the default
+            slide.urlExp = 'none';
+        }
+        if (index === this.activeSlides.current ||
+            index === this.activeSlides.next ||
+            index === this.activeSlides.previous) {
+            const exp = `url('${slide.url}')`;
+            if (slide.urlExp !== exp) {
+                slide.urlExp = exp;
+            }
+        }
+        return slide;
+    }
+
 }

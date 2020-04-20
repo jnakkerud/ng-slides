@@ -10,7 +10,7 @@
     <ng-template #slide let-slide>
       <div [ngStyle]="{
           'background-size': 'cover',
-          'background-image': 'url(' + slide.url + ')',
+          'background-image': slide.urlExp,
           'background-repeat': 'no-repeat',
           'background-position': slide.position,
           'width': '100%',

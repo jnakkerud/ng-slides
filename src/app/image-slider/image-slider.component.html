@@ -4,7 +4,7 @@
 	<!-- slides -->
 	<ul class="slides">
 		<li class="slide" *ngFor="let slide of slides; let i = index;" [@slideState]="getAnimationSlideState(i)">
-			<ng-container *ngTemplateOutlet="slideTemplateRef; context: { $implicit: slide }"></ng-container>
+			<ng-container *ngTemplateOutlet="slideTemplateRef; context: { $implicit: slideContext(slide, i) }"></ng-container>
 		</li>
 	</ul>
 </div>

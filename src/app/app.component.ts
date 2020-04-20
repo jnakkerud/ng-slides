@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
-import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
 import { SoundService } from './sound.service';
@@ -41,24 +41,22 @@ export class AppComponent implements OnInit {
     private dataService: DataService,
     private soundService: SoundService,
     breakpointObserver: BreakpointObserver) {
-      breakpointObserver.observe([
-        Breakpoints.Handset,
-        Breakpoints.TabletPortrait
-      ]).subscribe(result => {
-        if (result.matches) {
-          // hide nav bar
-          this.hideNavigation = true;
-        } else {
-          this.hideNavigation = this.sliderConfig?.hideNavigation || false;
-        }
-      });
+    breakpointObserver.observe([
+      Breakpoints.Handset,
+      Breakpoints.TabletPortrait
+    ]).subscribe(result => {
+      if (result.matches) {
+        // hide nav bar
+        this.hideNavigation = true;
+      } else {
+        this.hideNavigation = this.sliderConfig?.hideNavigation || false;
+      }
+    });
 
-      iconRegistry.addSvgIcon(
-        'info-icon',
-        sanitizer.bypassSecurityTrustResourceUrl('../assets/img/info-icon.svg'));
-
-    }
-
+    iconRegistry.addSvgIcon(
+      'info-icon',
+      sanitizer.bypassSecurityTrustResourceUrl('../assets/img/info-icon.svg'));
+  }
 
   ngOnInit(): void {
     this.dataService.getSlidesModel().then(m => {
@@ -80,7 +78,8 @@ export class AppComponent implements OnInit {
     this.slideInfo = {
       url: current.url,
       title: current.title || titleFromUrl(current.url),
-      description: current.description || ''
+      description: current.description || '',
+      urlExp: current.urlExp
     };
   }
 

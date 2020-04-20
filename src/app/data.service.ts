@@ -2,10 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 export interface DataUrl {
+    /* The url of the resource */
     url: string;
+    /* url expression to be applied to background-image */
+    urlExp?: string;
     title?: string;
     description?: string;
-    position?: string;     // background-position
+    /* Specify the background-position */
+    position?: string;
 }
 
 export interface ImageSliderConfig {
@@ -55,9 +59,12 @@ const DEFAULT_CONFIG = `
         "slides": [
             {
                 "url": "https://source.unsplash.com/1600x900/?nature,water"
-              },
-              {
+            },
+            {
                 "url": "https://source.unsplash.com/1600x1600/?nature,forest"
+            },
+            {
+                "url": "https://source.unsplash.com/1600x900/?nature,beach"
             }
         ]
     }
