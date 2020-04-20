@@ -40,6 +40,10 @@ export class NavBarComponent {
 
     private handleInfoChange() {
         if (this.showInfo) {
+            // stop auto play
+            if (this.slider.autoPlayDuration > 0) {
+                this.slider.autoPlayDuration = 0;
+            }
             this.showSlideInfo(this.slider.activeSlides);
         }
 
