@@ -11,13 +11,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DataService } from './data.service';
 import { SoundService } from './sound.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,7 @@ import {
     OnInit,
     ChangeDetectorRef,
     KeyValueDiffer,
-    KeyValueDiffers,
-    Output,
-    EventEmitter
+    KeyValueDiffers
 } from '@angular/core';
 import {
     trigger,
@@ -103,8 +101,6 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     @Input() shuffle = false;
 
-    @Output() slideChange = new EventEmitter<ActiveSlides>();
-
     currentInterval;
     differ: KeyValueDiffer<ActiveSlides, any>;
 
@@ -150,7 +146,6 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
                 this.slides = shuffle(this.slides);
             }
             this.activeSlides = this.getPreviousCurrentNextIndexes(0);
-            this.slideChange.emit(this.activeSlides);
             this.differ = this.differs.find(this.activeSlides).create();
             if (this.slides.length > 1 && this.autoPlayDuration > 0) {
                 this.startTimer();
@@ -167,7 +162,6 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
         Promise.resolve(null).then(() => {
             this.resetTimer();
             this.activeSlides = this.getPreviousCurrentNextIndexes(index);
-            this.slideChange.emit(this.activeSlides);
             this.direction = this.getDirection(this.activeSlides.current, index);
             this.startTimer();
             if (this.differ.diff(this.activeSlides)) {

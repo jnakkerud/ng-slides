@@ -1,0 +1,33 @@
+<div class="nav-content">
+    <ng-container *ngIf="showInfo">
+        <div class="info-content">
+            <mat-card class="info-card">
+                <mat-card-header>
+                    <mat-card-title>{{slideInfo.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        {{slideInfo.description}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </ng-container>
+    <div class="btn-group">
+        <div class="nav-control">
+            <button mat-fab aria-label="arrow forward" (click)="onNext()">
+                <mat-icon>arrow_forward</mat-icon>
+            </button>
+        </div>
+        <div class="nav-control">
+            <button mat-fab aria-label="arrow back" (click)="onPrevious()">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+        </div>
+        <div class="nav-control">
+            <button mat-fab aria-label="information" (click)="toggleInfo()">
+                <mat-icon svgIcon="info-icon"></mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

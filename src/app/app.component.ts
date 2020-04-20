@@ -1,15 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconRegistry } from '@angular/material/icon';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
 import { SoundService } from './sound.service';
-import { ActiveSlides } from './image-slider/image-slider.component';
-
-function titleFromUrl(url: string): string {
-  return url.substring(url.lastIndexOf('/') + 1);
-}
 
 @Component({
   selector: 'app-root',
@@ -20,12 +13,10 @@ export class AppComponent implements OnInit {
 
   slidesModel: SlidesModel;
   title = 'ng-slides';
-  showInfo = false;
-
-  slideInfo: DataUrl;
 
   hideNavigation = false;
   isLoading = true;
+  layoutForInfo = false;
 
   // tslint:disable-next-line: variable-name
   private _sliderConfig: ImageSliderConfig;
@@ -37,7 +28,6 @@ export class AppComponent implements OnInit {
   }
 
   constructor(
-    iconRegistry: MatIconRegistry, sanitizer: DomSanitizer,
     private dataService: DataService,
     private soundService: SoundService,
     breakpointObserver: BreakpointObserver) {
@@ -53,9 +43,6 @@ export class AppComponent implements OnInit {
       }
     });
 
-    iconRegistry.addSvgIcon(
-      'info-icon',
-      sanitizer.bypassSecurityTrustResourceUrl('../assets/img/info-icon.svg'));
   }
 
   ngOnInit(): void {
@@ -68,24 +55,14 @@ export class AppComponent implements OnInit {
     });
   }
 
-  toggleInfo() {
-    this.showInfo = !this.showInfo;
-  }
-
-  onSlideChange(activeSlides: ActiveSlides) {
-    const current = this.slidesModel.slides[activeSlides.current];
-
-    this.slideInfo = {
-      url: current.url,
-      title: current.title || titleFromUrl(current.url),
-      description: current.description || '',
-      urlExp: current.urlExp
-    };
-  }
-
   loadSound(sounds: DataUrl[]) {
     if (sounds) {
+      // TODO Promise.resolve(null).then(() => {
       this.soundService.play(sounds);
     }
+  }
+
+  onInfoChange(showInfo: boolean) {
+    this.layoutForInfo = showInfo;
   }
 }
