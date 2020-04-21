@@ -35,7 +35,8 @@ export class SoundService {
 
     private playSound(url: string) {
         // create the audio context https://developer.mozilla.org/en-US/docs/Web/API/AudioContext
-        this.audioContext = new AudioContext();
+        // tslint:disable-next-line: no-string-literal
+        this.audioContext =  new (window.AudioContext || window['webkitAudioContext'])();
 
         this.httpClient.get(url, {responseType: 'arraybuffer'}).subscribe(buffer => {
             this.createPlayer(buffer, this.audioContext);
@@ -81,7 +82,9 @@ export class SoundService {
     }
 
     private createPlayer(buffer: any, context: AudioContext) {
-        context.decodeAudioData(buffer).then(audioData => {
+        // Using the older syntax to support Safari
+        // https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData
+        context.decodeAudioData(buffer, audioData => {
             const source = this.audioContext.createBufferSource();
             source.onended = () => {
                 this.close();
