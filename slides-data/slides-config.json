@@ -109,16 +109,16 @@
     ],
     "sounds": [
         {
-            "url": "/slides-data/06 Ride Like the Wind.m4a"
+            "url": "./slides-data/06 Ride Like the Wind.m4a"
         },
         {
-            "url": "/slides-data/Bonnie And Clyde.m4a"
+            "url": "./slides-data/Bonnie And Clyde.m4a"
         }
     ],
     "imageSliderConfig": {
         "hideNavigation": false,
         "animation": "slide",
-        "autoPlayDuration": 0,
-        "shuffle": false
+        "autoPlayDuration": 5000,
+        "shuffle": true
     }
 }
