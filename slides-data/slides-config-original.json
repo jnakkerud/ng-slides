@@ -1,0 +1,119 @@
+{
+    "slides": [
+        {
+            "url": "https://live.staticflickr.com/65535/49790871796_d8ace4f15f_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790871926_f5497dd8e2_o.jpg",
+            "title": "Enjoying the view"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182442_93c10f90ba_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182502_4718b70c31_o.jpg",
+            "title": "Party time"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872041_3c78d63141_o.jpg",
+            "title": "Hot tub"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182542_3ef6398557_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790326933_61024e5888_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182602_ace67740d8_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872196_ce0648b0e2_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327138_0a7176f183_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327223_0a666a2163_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327303_5f5808f49a_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872401_10f75168de_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182962_e9f20460dc_o.jpg",
+            "title": "Which direction?"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872591_97a7bf35df_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872656_7cefa3e04c_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872791_c150d79d20_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183242_0a25919859_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872876_7f41434abc_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327808_3a924a5e23_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327883_353899669c_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183467_9bd2de7b7e_o.jpg",
+            "title": "Mais Oui"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183512_11508ce7a2_o.jpg",
+            "description": "No, it's not the 220 Euro potato soup"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183537_cb28b907f3_o.jpg",
+            "title": "Butter 2"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183582_f778394a6d_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873261_7cd052d56d_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873326_a5e66f7fcd_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790328218_82025f67de_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873441_671283d7ba_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873466_c9b9392519_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790328258_4bbe4d2e83_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49775588397_7cf083eb09_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49775588412_ef9b8857ac_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49774726518_42fec1130e_o.jpg"
+        }
+    ],
+    "imageSliderConfig": {
+        "hideNavigation": false,
+        "animation": "slide",
+        "autoPlayDuration": 0,
+        "shuffle": false
+    }
+}
