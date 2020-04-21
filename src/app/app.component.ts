@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
-import { SoundService } from './sound.service';
+import { SoundService, SoundState } from './sound.service';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   hideNavigation = false;
   isLoading = true;
   layoutForInfo = false;
+  canPlaySound = false;
 
   // tslint:disable-next-line: variable-name
   private _sliderConfig: ImageSliderConfig;
@@ -38,8 +39,10 @@ export class AppComponent implements OnInit {
       if (result.matches) {
         // hide nav bar
         this.hideNavigation = true;
+        this.canPlaySound = false;
       } else {
         this.hideNavigation = this.sliderConfig?.hideNavigation || false;
+        this.canPlaySound = true;
       }
     });
 
@@ -50,15 +53,35 @@ export class AppComponent implements OnInit {
       this.slidesModel = m;
       this.sliderConfig = m.imageSliderConfig;
       this.hideNavigation = this.sliderConfig.hideNavigation;
-      this.loadSound(m.sounds);
+      this.loadSounds(m.sounds);
       this.isLoading = false;
     });
   }
 
-  loadSound(sounds: DataUrl[]) {
-    if (sounds) {
-      // TODO Promise.resolve(null).then(() => {
-      this.soundService.play(sounds);
+  loadSounds(sounds: DataUrl[]) {
+    if (sounds && this.canPlaySound) {
+      this.soundService.load(sounds);
+    }
+  }
+
+
+  toggleSound() {
+    // if sound is running, suspend, otherwise resume
+    const state = this.soundService.getState();
+
+    switch (state) {
+      case SoundState.Suspended: {
+        this.soundService.resume();
+        break;
+      }
+      case SoundState.Running: {
+        this.soundService.suspend();
+        break;
+      }
+      case SoundState.Closed: {
+        this.soundService.nextSound();
+        break;
+      }
     }
   }
 

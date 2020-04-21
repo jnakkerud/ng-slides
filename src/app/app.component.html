@@ -1,4 +1,4 @@
-<div *ngIf="!isLoading; else showLoading" class="container">
+<div *ngIf="!isLoading; else showLoading" class="container" (click)="toggleSound()">
   <div class="main" [style.flex]="layoutForInfo ? 80 : 1">
     <app-image-slider #slider [animation]="sliderConfig.animation" [slides]="slidesModel.slides"
       [autoPlayDuration]="sliderConfig.autoPlayDuration" [shuffle]="sliderConfig.shuffle" [slideTemplateRef]="slide">
