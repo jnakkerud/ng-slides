@@ -30,7 +30,7 @@ export class NavBarComponent {
     constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
         iconRegistry.addSvgIcon(
             'info-icon',
-            sanitizer.bypassSecurityTrustResourceUrl('../assets/img/info-icon.svg'));
+            sanitizer.bypassSecurityTrustResourceUrl('./assets/img/info-icon.svg'));
     }
 
     toggleInfo() {
