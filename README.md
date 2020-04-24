@@ -99,6 +99,11 @@ Its possible to add additional configuration in the json config file.  For examp
 
 There are more config options available, see [data.service.ts](https://github.com/jnakkerud/ng-slides/blob/master/src/app/data.service.ts)
 
+### Image sizes
+
+For best results, images sizes should have an aspect ratio of 16:9.  Also a file with a lower file size, will result in better user experience.   
+
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
