@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, AfterViewInit, OnDestroy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 import { MatIconRegistry } from '@angular/material/icon';
@@ -6,6 +6,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { ActiveSlides } from '../image-slider/image-slider.component';
 import { DataUrl } from '../data.service';
 import { ImageSliderComponent } from '../image-slider/image-slider.component';
+import { Subscription } from 'rxjs';
 
 function titleFromUrl(url: string): string {
     return url.substring(url.lastIndexOf('/') + 1);
@@ -17,7 +18,7 @@ function titleFromUrl(url: string): string {
     templateUrl: 'nav-bar.component.html',
     styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent {
+export class NavBarComponent implements AfterViewInit, OnDestroy {
 
     @Input() slider: ImageSliderComponent;
 
@@ -27,10 +28,24 @@ export class NavBarComponent {
 
     slideInfo: DataUrl;
 
+    private slidesChangeSubscription = Subscription.EMPTY;
+
     constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
         iconRegistry.addSvgIcon(
             'info-icon',
             sanitizer.bypassSecurityTrustResourceUrl('./assets/img/info-icon.svg'));
+    }
+
+    ngOnDestroy(): void {
+        this.slidesChangeSubscription.unsubscribe();
+    }
+
+    ngAfterViewInit(): void {
+        this.slidesChangeSubscription = this.slider.activeSlidesChange.subscribe(() => {
+            if (this.slider.activeSlides) {
+                this.showSlideInfo(this.slider.activeSlides);
+            }
+        });
     }
 
     toggleInfo() {

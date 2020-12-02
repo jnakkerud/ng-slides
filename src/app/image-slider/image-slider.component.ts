@@ -8,7 +8,9 @@ import {
     OnInit,
     ChangeDetectorRef,
     KeyValueDiffer,
-    KeyValueDiffers
+    KeyValueDiffers,
+    Output,
+    EventEmitter
 } from '@angular/core';
 import {
     trigger,
@@ -101,6 +103,8 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
     @Input() shuffle = false;
 
+    @Output() activeSlidesChange = new EventEmitter<ActiveSlides>();
+
     currentInterval;
     differ: KeyValueDiffer<ActiveSlides, any>;
 
@@ -124,6 +128,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     }
     set activeSlides(activeSlides: ActiveSlides) {
         this._activeSlides = activeSlides;
+        this.fireActiveSlidesChange();
     }
 
     @HostListener('document:keydown', ['$event'])
@@ -156,6 +161,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     ngOnDestroy(): void {
         this.resetTimer();
         this.cd.detach();
+        this.activeSlidesChange.complete();
     }
 
     select(index: number): void {
@@ -256,6 +262,10 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
             }
         }
         return slide;
+    }
+
+    fireActiveSlidesChange() {
+        this.activeSlidesChange.emit(this.activeSlides);
     }
 
 }
