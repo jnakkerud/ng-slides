@@ -43,7 +43,7 @@ filenames.forEach(function (filename) {
 
         var content = {};
         content['url'] = rootUrl + filename;                     
-        content['title'] = getTag(tags, 'xmp', 'title') || path.parse(filename).name;
+        content['title'] = getTag(tags, 'xmp', 'title') || stripDash(path.parse(filename).name);
         const description = getTag(tags, 'xmp', 'description');;
         if (description) {
             content['description'] = description;
@@ -89,4 +89,9 @@ function getTag(tags, group, name) {
         }
     }
     return null;
+}
+
+function stripDash(name) {
+    // remove dash
+    return name.replace(/-/g, " ");
 }
