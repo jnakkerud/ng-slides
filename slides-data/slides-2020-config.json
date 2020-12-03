@@ -1,0 +1,124 @@
+{
+    "slides": [
+        {
+            "url": "https://live.staticflickr.com/65535/49790871796_4a2c493683_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790871926_05b207004d_b.jpg",
+            "title": "Enjoying the view"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182442_93c10f90ba_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182502_e7caaaedb1_b.jpg",
+            "title": "Party time"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872041_3c78d63141_o.jpg",
+            "title": "Hot tub"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182542_3ef6398557_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790326933_61024e5888_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182602_abcc6761cf_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872196_1e88da6cfd_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327138_eaa7386dc1_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327223_f4a3aaa2c0_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327303_884efcfcf0_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872401_fffcb35e93_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791182962_0a8b6811e6_b.jpg",
+            "title": "Which direction?"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872591_2b7a644e0b_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872656_d14fdc4b13_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790872791_279448f094_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327808_2be233ca4a_b.jpg",
+            "position": "center center"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790327883_177b289ae7_b.jpg",
+            "position": "center center"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183467_8e7b380911_b.jpg",
+            "title": "Mais Oui"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183512_67b1576681_b.jpg",
+            "description": "The 220 Euro potato soup",
+            "position": "center center"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183537_6c25cbd710_b.jpg",
+            "title": "Butter 2"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49791183582_3c787d7388_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873261_cc92c6c195_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873326_3d2938db88_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790328218_ac00d4859b_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873441_671283d7ba_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790873466_c9b9392519_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49790328258_4bbe4d2e83_o.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49775588397_7547f2231a_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49775588412_8f758296f8_b.jpg"
+        },
+        {
+            "url": "https://live.staticflickr.com/65535/49774726518_75c662e8e4_b.jpg"
+        }
+    ],
+    "sounds": [
+        {
+            "url": "./slides-data/06 Ride Like the Wind.m4a"
+        },
+        {
+            "url": "./slides-data/Bonnie And Clyde.m4a"
+        }
+    ],
+    "imageSliderConfig": {
+        "hideNavigation": false,
+        "animation": "slide",
+        "autoPlayDuration": 5000,
+        "shuffle": true
+    }
+}

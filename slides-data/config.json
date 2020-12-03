@@ -1,0 +1,394 @@
+{
+    "slides": [
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/3star-val-thorens-2020.jpeg",
+            "title": "3star val thorens 2020",
+            "description": "The chef has 3 stars"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/amigos-st-anton-2015.jpeg",
+            "title": "amigos st anton 2015",
+            "description": "Three amigos - In Zurs"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/amigos-zermatt-2014.jpeg",
+            "title": "amigos zermatt 2014"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/andrea-verbier-2010.jpeg",
+            "title": "andrea verbier 2010",
+            "description": "Andrea appreciating a great day"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/apres-ischgl-2018.jpeg",
+            "title": "apres ischgl 2018"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/apres-st-anton-2005.jpeg",
+            "title": "apres st anton 2005",
+            "description": "Apres ski - krazy kanguruh ?"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/apres-val-gardena-2017.jpeg",
+            "title": "apres val gardena 2017"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/apres-verbier-2010.jpeg",
+            "title": "apres verbier 2010",
+            "description": "Apres - Verbier style"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/bar-val-thorens-2020.jpeg",
+            "title": "bar val thorens 2020",
+            "description": "Getting crazy in the Rhum Box"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/blatten-zermatt-2014.jpeg",
+            "title": "blatten zermatt 2014"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/bone-marrow-val-thorens-2020.jpeg",
+            "title": "bone marrow val thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/border-ischgl-2018.jpeg",
+            "title": "border ischgl 2018"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/butter-val-thorens-2020.jpeg",
+            "title": "butter val thorens 2020",
+            "description": "Butter platter"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/chair-lift-val-thorens-2020.jpeg",
+            "title": "chair lift val thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/chalet-etoile-zermatt-2013.jpeg",
+            "title": "chalet etoile zermatt 2013",
+            "description": "Another great lunch at Chalet Etoile"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/champagn-st-anton-2016.jpeg",
+            "title": "champagne st anton 2016",
+            "description": "Champagne on the mountain - de rigueur in Lech"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/champagne-val-gardena-2017.jpeg",
+            "title": "champagne val gardena 2017",
+            "description": "I think this place has Champagne"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/champagne-zermatt-2019.jpeg",
+            "title": "champagne zermatt 2019"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/champange-zermatt-2013.jpeg",
+            "title": "champagne zermatt 2013",
+            "description": "Favorite champagne bar on run back to Zermatt"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/cheers-zermatt-2014.jpeg",
+            "title": "cheers zermatt 2014",
+            "description": "Can't start a lunch without Prosecco"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/christian-zermatt-2019.jpeg",
+            "title": "christian zermatt 2019"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dave-st-anton-2015.jpeg",
+            "title": "dave st anton 2015",
+            "description": "Apres ski down can be a bitch"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dessert-ischgl-2018.jpeg",
+            "title": "dessert ischgl 2018",
+            "description": "Dessert time"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dessert-st-anton-2015.jpeg",
+            "title": "dessert st anton 2015",
+            "description": "Kaiserschmarrn at Hospiz Alm"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dessert-st-anton-2016.jpeg",
+            "title": "dessert st anton 2016",
+            "description": "cant get enough kaiserschmarrn"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dinner-chamonix-2009.jpeg",
+            "title": "dinner chamonix 2009",
+            "description": "Dinner in Chamonix"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/disco-whistle-val-thorens-2020.jpeg",
+            "title": "disco whistle val thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/dolomites-val-gardena-2017.jpeg",
+            "title": "dolomites val gardena 2017"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/fois-gras-val-thorens-2020.jpeg",
+            "title": "fois gras val thorens 2020",
+            "description": "When in France, must have the Fois Gras"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/fondue-zermatt-2014.jpeg",
+            "title": "fondue zermatt 2014"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/grappa-st-anton-2016.jpeg",
+            "title": "grappa st anton 2016"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/group-ischgl-2018.jpeg",
+            "title": "group ischgl 2018",
+            "description": "Kickoff dinner at Fork and Bottle"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/group-st-anton-2015.jpeg",
+            "title": "group st anton 2015"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/group-val-thorens-2020.jpeg",
+            "title": "group val thorens 2020",
+            "description": "Val Thorens Group"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/group-zermatt-2014.jpeg",
+            "title": "group zermatt 2014",
+            "description": "Cappuccino stop in Cervinia"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/group-zermatt-2019.jpeg",
+            "title": "group zermatt 2019"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/jon-val-gardena-2017.jpeg",
+            "title": "jon val gardena 2017"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/jump-val-thorens-2020.jpeg",
+            "title": "jump val thorens 2020",
+            "description": "Going for air"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/krazy-st-anton-2015.jpeg",
+            "title": "krazy st anton 2015"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lardo-val-gardena-2017.jpeg",
+            "title": "lardo val gardena 2017",
+            "description": "Never turn down lardo di prosciutto"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lech-st-anton-2016.jpeg",
+            "title": "lech st anton 2016",
+            "description": "Another classic powder day in the Alps"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lobster-zermatt-2013.jpeg",
+            "title": "lobster zermatt 2013",
+            "description": "Mountain lobster - A specialty in Cervinia"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-chamonix-2009.jpeg",
+            "title": "lunch chamonix 2009",
+            "description": "Lunch on the mountain in Chamonix"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-hut-chamonix-2009.jpeg",
+            "title": "lunch hut chamonix 2009",
+            "description": "Lunch - Refuge du Requin"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-ischgl-2018.jpeg",
+            "title": "lunch ischgl 2018",
+            "description": "Fondue for lunch"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-special-zermatt-2013.jpeg",
+            "title": "lunch special zermatt 2013",
+            "description": "Lunch - Chalet Etoile"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-special-zermatt-2019.jpeg",
+            "title": "lunch special zermatt 2019",
+            "description": "Truffle on top of ?"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-st-anton-2005.jpeg",
+            "title": "lunch st anton 2005",
+            "description": "Lunch on the mountain"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-st-anton-2015.jpeg",
+            "title": "lunch st anton 2015",
+            "description": "Hospiz Alm for Lunch"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-st-anton-2016.jpeg",
+            "title": "lunch st anton 2016"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-val-2004.jpeg",
+            "title": "lunch val 2004",
+            "description": "Val D'Isere lunch on the mountain"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-val-gardena-2017.jpeg",
+            "title": "lunch val gardena 2017"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-zermatt-2014.jpeg",
+            "title": "lunch zermatt 2014",
+            "description": "Giant prawns at Chalet Etoile"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/lunch-zermatt-2019.jpeg",
+            "title": "lunch zermatt 2019",
+            "description": "Can't beat the view at Findlerhof restaurant"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/mer-de-glace-chamonix-2009.jpeg",
+            "title": "mer de glace chamonix 2009",
+            "description": "Mer de glace run"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/mooserwirt-st-anton-2005.jpeg",
+            "title": "mooserwirt st anton 2005",
+            "description": "Don't lose your skis - Mooserwirt"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/off-piste-ischgl-2018.jpeg",
+            "title": "off piste ischgl 2018",
+            "description": "Off on an adventure"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/opening-st-anton-2015.jpeg",
+            "title": "opening st anton 2015"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/platter-zermatt-2019.jpeg",
+            "title": "platter zermatt 2019",
+            "description": "Must have the meat and cheese platter"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/poma-verbier-2010.jpeg",
+            "title": "poma verbier 2010",
+            "description": "Good form on the poma"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/powder-run-zermatt-2013.jpeg",
+            "title": "powder run zermatt 2013",
+            "description": "Powder off of the klein matterhorn with Vijay and Dave"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/powder-seeker-zermatt-2014.jpeg",
+            "title": "powder seeker zermatt 2014",
+            "description": "Mike seeking powder"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/powder-st-anton-2005.jpeg",
+            "title": "powder st anton 2005",
+            "description": "Powder Run - Jay"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/powder-st-anton-2016.jpeg",
+            "title": "powder st anton 2016"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/powder-val-thorens-2020.jpeg",
+            "title": "powder val thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/raclette-val-thorens-2020.jpeg",
+            "title": "Raclette Dinner",
+            "description": "Raclette Dinner at Val Thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/roesti-verbier-2010.jpeg",
+            "title": "roesti verbier 2010",
+            "description": "A Verbier roesti"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/shots-ischgl-2018.jpeg",
+            "title": "shots ischgl 2018",
+            "description": "Schnapps in its different forms"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/shots-zermatt-2014.jpeg",
+            "title": "shots zermatt 2014"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/shots-zermatt-2019.jpeg",
+            "title": "shots zermatt 2019",
+            "description": "Need a little liquid courage to get down the mountain"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/ski-lift-verbier-2010.jpeg",
+            "title": "ski lift verbier 2010",
+            "description": "Ski lift in Verbier"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/ski-room-zermatt-2019.jpeg",
+            "title": "ski room zermatt 2019",
+            "description": "In the ski and boot cave"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/sleding-st-anton-2016.jpeg",
+            "title": "sledding st anton 2016",
+            "description": "Night sledding in St Anton"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/slide-st-anton-2015.jpeg",
+            "title": "slide st anton 2015",
+            "description": "Slide to the wine cellar at Hospiz Alm"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/snoozing-zermatt-2019.jpeg",
+            "title": "snoozing zermatt 2019",
+            "description": "On these trips, need to get you sleep anywhere you can"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/snow-val-thorens-2020.jpeg",
+            "title": "snow val thorens 2020"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/stuben-st-anton-2005.jpeg",
+            "title": "stuben st anton 2005",
+            "description": "Run to Stuben"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/tortin-verbier-2010.jpeg",
+            "title": "tortin verbier 2010",
+            "description": "Dave and Vijay on the Tortin run in Verbier"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/tram-ride-ischgl-2018.jpeg",
+            "title": "tram ride ischgl 2018"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/vijay-matterhorn-2013.jpeg",
+            "title": "vijay matterhorn 2013"
+        },
+        {
+            "url": "https://euro-ski-slides.s3-us-west-1.amazonaws.com/skiing-alps/vijay-val-gardena-2017.jpeg",
+            "title": "vijay val gardena 2017",
+            "description": "The best hangover cure: strawberries and Champagne"
+        }
+    ],
+    "sounds": [
+        {
+            "url": "./slides-data/johnny-dapp.mp3"
+        }
+    ],    
+    "imageSliderConfig": {
+        "hideNavigation": false,
+        "animation": "slide",
+        "autoPlayDuration": 5000,
+        "shuffle": true
+    }    
+}
