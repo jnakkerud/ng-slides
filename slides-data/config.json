@@ -379,6 +379,9 @@
     "sounds": [
         {
             "url": "./slides-data/johnny-dapp.mp3"
+        },
+        {
+            "url": "./slides-data/Laat Maar Waaien.m4a"
         }
     ],    
     "imageSliderConfig": {
