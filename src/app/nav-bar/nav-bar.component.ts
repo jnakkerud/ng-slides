@@ -7,6 +7,7 @@ import { ActiveSlides } from '../image-slider/image-slider.component';
 import { DataUrl } from '../data.service';
 import { ImageSliderComponent } from '../image-slider/image-slider.component';
 import { Subscription } from 'rxjs';
+import { SoundService } from '../sound.service';
 
 function titleFromUrl(url: string): string {
     return url.substring(url.lastIndexOf('/') + 1);
@@ -30,7 +31,7 @@ export class NavBarComponent implements AfterViewInit, OnDestroy {
 
     private slidesChangeSubscription = Subscription.EMPTY;
 
-    constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private soundService: SoundService) {
         iconRegistry.addSvgIcon(
             'info-icon',
             sanitizer.bypassSecurityTrustResourceUrl('./assets/img/info-icon.svg'));
@@ -82,5 +83,21 @@ export class NavBarComponent implements AfterViewInit, OnDestroy {
 
     onPrevious() {
         this.slider.select(this.slider.activeSlides.previous);
+    }
+
+    toggleSound() {
+        if (this.soundPlaying) {
+            this.soundService.suspend();
+        } else {
+            this.soundService.nextSound();
+        }
+    }
+
+    get soundPlaying(): boolean {
+        return this.soundService.isPlaying();
+    }
+
+    get canPlaySound(): boolean {
+        return this.soundService.canPlay();
     }
 }

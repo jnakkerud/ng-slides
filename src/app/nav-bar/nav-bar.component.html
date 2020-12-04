@@ -29,5 +29,12 @@
                 <mat-icon svgIcon="info-icon"></mat-icon>
             </button>
         </div>
+        <div class="nav-control">
+            <ng-container *ngIf="canPlaySound">
+                <button mat-fab aria-label="sound" (click)="toggleSound()">
+                    <mat-icon>{{soundPlaying === true ? 'music_off' : 'music_note'}}</mat-icon>
+                </button>
+            </ng-container>
+        </div>        
     </div>
 </div>

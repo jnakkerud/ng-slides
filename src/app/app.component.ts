@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { DataService, SlidesModel, DataUrl, ImageSliderConfig } from './data.service';
-import { SoundService, SoundState } from './sound.service';
+import { SoundService } from './sound.service';
 
 @Component({
   selector: 'app-root',
@@ -61,27 +61,6 @@ export class AppComponent implements OnInit {
   loadSounds(sounds: DataUrl[]) {
     if (sounds && this.canPlaySound) {
       this.soundService.load(sounds);
-    }
-  }
-
-
-  toggleSound() {
-    // if sound is running, suspend, otherwise resume
-    const state = this.soundService.getState();
-
-    switch (state) {
-      case SoundState.Suspended: {
-        this.soundService.resume();
-        break;
-      }
-      case SoundState.Running: {
-        this.soundService.suspend();
-        break;
-      }
-      case SoundState.Closed: {
-        this.soundService.nextSound();
-        break;
-      }
     }
   }
 

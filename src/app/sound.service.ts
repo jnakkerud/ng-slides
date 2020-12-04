@@ -81,6 +81,14 @@ export class SoundService {
         return state;
     }
 
+    public canPlay(): boolean {
+        return !!this.audioContext;
+    }
+
+    public isPlaying(): boolean {
+        return this.getState() === SoundState.Running;
+    }
+
     private createPlayer(buffer: any, context: AudioContext) {
         // Using the older syntax to support Safari
         // https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData
