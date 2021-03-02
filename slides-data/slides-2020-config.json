@@ -109,10 +109,7 @@
     ],
     "sounds": [
         {
-            "url": "./slides-data/06 Ride Like the Wind.m4a"
-        },
-        {
-            "url": "./slides-data/Bonnie And Clyde.m4a"
+            "url": "./slides-data/johnny-dapp.mp3"
         }
     ],
     "imageSliderConfig": {
