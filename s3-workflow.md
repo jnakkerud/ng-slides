@@ -37,13 +37,12 @@ aws s3 mb s3://<project>
 ```
 aws s3 sync . s3://<project>/photos --acl public-read
 ```
-5. Run config generation tool from git project root.  
+5. Run config generation tool from git project root which should create `../slides-upload/config.json` 
 ```
 node ./scripts/image-config.js ~/Downloads/my-slideshow https://<project>.s3-us-west-1.amazonaws.com/photos/
 ```
-`../slides-upload/config.json` should be created
 6. Test locally using the config.json.   
-7.  cd to `../slides-upload` then Upload the config.json to s3:
+7. cd to `../slides-upload` then Upload the config.json to s3:
 ```
 aws s3 cp config.json s3://<project> --acl public-read
 ```
