@@ -1,0 +1,316 @@
+{
+    "slides": [
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/baby-turtles.jpeg",
+            "title": "baby turtles",
+            "description": "Baby turtles heading to the sea"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/cafe-el-triunfo.jpeg",
+            "title": "cafe el triunfo",
+            "description": "Nice cafe in El Triunfo"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/cafe-triunfo-inside.jpeg",
+            "title": "cafe triunfo inside"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/guadaloupe.jpeg",
+            "title": "guadaloupe",
+            "description": "Roadside shrine."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/hotel-california.jpeg",
+            "title": "hotel california",
+            "description": "The famous Hotel California in Todos Santos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/la-paz-marina.jpeg",
+            "title": "la paz marina",
+            "description": "Calm and hot day at La Paz. View from the malecon"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/la-tuna-beach-daze.jpeg",
+            "title": "la tuna beach daze",
+            "description": "Nice day at la tuna beach."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/red-sea.jpeg",
+            "title": "red sea"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/sunrise.jpeg",
+            "title": "sunrise",
+            "description": "Sunrise from my casita"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/tacos-al-pastor.jpeg",
+            "title": "tacos al pastor",
+            "description": "Al pastor tacos and horchata"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/todos-beach.jpeg",
+            "title": "todos beach",
+            "description": "Beach on the Pacific in Todos Santos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/todos-gallery.jpeg",
+            "title": "todos gallery",
+            "description": "Artists gallery in Todos Santos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/todos-street.jpeg",
+            "title": "todos street",
+            "description": "Side street in Todos Santos"
+        },        
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/beach-dude.jpeg",
+            "title": "beach dude",
+            "description": "Never know who you will meet on the beach"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/ceralvo-island-view.jpeg",
+            "title": "ceralvo island view",
+            "description": "View from MTB trail"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/ebike-selfie.jpeg",
+            "title": "ebike selfie",
+            "description": "Fun MTB adventure on an ebike"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/fence.jpeg",
+            "title": "fence"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/karens-expedition-trail.jpeg",
+            "title": "karens expedition trail"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/kite-beach-la-tuna.jpeg",
+            "title": "kite beach la tuna",
+            "description": "Another beach in La Ventana called La Tuna"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/la-tuna.jpeg",
+            "title": "la tuna",
+            "description": "La Tuna beach action"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/las-paletas.jpeg",
+            "title": "las paletas"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/local-tienda.jpeg",
+            "title": "local tienda",
+            "description": "Small tienda off a side road in la Ventana"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/los-barilles.jpeg",
+            "title": "los barilles",
+            "description": "Hotel at Los Barriles where I have stayed in the past"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/san-bartolo.jpeg",
+            "title": "san bartolo",
+            "description": "Town of San Bartolo on the road to Los Barilles"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/sea-creature.jpeg",
+            "title": "sea creature",
+            "description": "Walking along the beach and saw this squid"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/wyatts-boat.jpeg",
+            "title": "wyatts boat"
+        },         
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/beach-dog.jpeg",
+            "title": "beach dog",
+            "description": "Watching the action on the beach"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/cardon-trail.jpeg",
+            "title": "cardon trail",
+            "description": "MTB trail through the cardon cactus"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/end-of-day.jpeg",
+            "title": "end of day"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/low-tide.jpeg",
+            "title": "low tide",
+            "description": "Wing foiler heading out on a low tide"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/mole-negro.jpeg",
+            "title": "mole negro",
+            "description": "Lunch in La Paz. Chicken with mole negro"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/morning-sup.jpeg",
+            "title": "morning sup"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/mtb-ride.jpeg",
+            "title": "mtb ride",
+            "description": "Lots of MTB adventures"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/rv-park.jpeg",
+            "title": "rv park",
+            "description": "Popular RV park on the waterfront."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/tacos.jpeg",
+            "title": "tacos",
+            "description": "Al Pastor Tacos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/taqueria.jpeg",
+            "title": "taqueria"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/wall.jpeg",
+            "title": "wall",
+            "description": "Wall in front of home in the neighborhood where I'm staying"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/wave-action.jpeg",
+            "title": "wave action",
+            "description": "When the El Norte blows, can get some decent waves"
+        },         
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/grocery-store.jpeg",
+            "title": "grocery store",
+            "description": "Market in La Ventana.  Has the essentials including many kinds of beans and salsas."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/hiking-north.jpeg",
+            "title": "hiking north",
+            "description": "Nice hiking area north of town."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/inside-resto-la-paz.jpeg",
+            "title": "inside restaurant la paz",
+            "description": "Restaurant in La Paz specializing in fish tacos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/jon-wing-foil.jpeg",
+            "title": "jon wing foil",
+            "description": "Ready to hit the water on a wing foil"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/lunch-el-triunfo.jpeg",
+            "title": "lunch el triunfo",
+            "description": "Lunch in El Triunfo,  about 30 min from La Ventana.  Quesadilla with handmade tortilla and an empanada with a mug of fresh pinapple agua fresca."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/malecon.jpeg",
+            "title": "malecon",
+            "description": "The La Paz malecon. Nice walk along the waterfront with restaurants"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/nieve.jpeg",
+            "title": "nieve",
+            "description": "Ordered a nieve which means snow,  so sort of like a snow cone. Yummy."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/pinata.jpeg",
+            "title": "pinata",
+            "description": "Christmas Pinata"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/punta-arena.jpeg",
+            "title": "punta arena",
+            "description": "Punta Arena lighthouse"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/wood-fire-cooking.jpeg",
+            "title": "wood fire cooking",
+            "description": "This restaurant uses wood for cooking"
+        },     
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/beach-action.jpeg",
+            "title": "beach action",
+            "description": "Action on the beach"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/beach-chill.jpeg",
+            "title": "beach chill",
+            "description": "End of chilling"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/bike-ride.jpeg",
+            "title": "bike ride"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/cardon-sunset.jpeg",
+            "title": "cardon sunset",
+            "description": "A Cardon cactus forest close to my airbnb"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/el-triumfo.jpeg",
+            "title": "el triumfo",
+            "description": "Village of El Triunfo"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/empty-beach.jpeg",
+            "title": "empty beach",
+            "description": "Beach goes on forever"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/garden-home.jpeg",
+            "title": "garden home",
+            "description": "Typical home with a dry garden"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/hike-road.jpeg",
+            "title": "hike road",
+            "description": "Lots of dirt roads to hike on."
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/lunch-in-el-triunfo.jpeg",
+            "title": "lunch in el triunfo",
+            "description": "This restaurant is german influenced, but with some Mexican touches like chile souce on the left"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/morning-sail.jpeg",
+            "title": "morning sail"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/room-view.jpeg",
+            "title": "room view",
+            "description": "View from my rental"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/room-with-a-view.jpeg",
+            "title": "room with a view",
+            "description": "Bedroom has nice terrace with a great view"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/santo-de-santa-barbara.jpeg",
+            "title": "santo de santa barbara"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/tacos.jpeg",
+            "title": "tacos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/tidepools.jpeg",
+            "title": "tidepools",
+            "description": "Interesting tidepools in bahia de los suenos"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/train-restraunt.jpeg",
+            "title": "train restaurant",
+            "description": "Restaurante centro de trenes bahia de los sueños"
+        },
+        {
+            "url": "https://nak-laventana.s3-us-west-1.amazonaws.com/laventana/wing-foil.jpeg",
+            "title": "wing foil",
+            "description": "Wing foiler"
+        }
+    ]
+}
