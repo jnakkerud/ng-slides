@@ -16,16 +16,25 @@ if (process.argv.length < 3) {
     process.exit();
 }
 
-const folder = process.argv[2];
+const dir = process.argv[2];
 const rootUrl = process.argv[3];
 
 var fileInfo = [];
 
-var filenames = fs.readdirSync(folder);
-filenames = filenames.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item));
+// filter and sort date descending the directory files
+var filenames = fs.readdirSync(dir)
+                    .filter(item => !(/(^|\/)\.[^\/\.]/g).test(item))
+                    .map(f => {
+                        return {
+                            name: f,
+                            time: fs.statSync(`${dir}/${f}`).mtime.getTime()
+                        };
+                    })
+                    .sort((a, b) => { return b.time - a.time; })
+                    .map(v => { return v.name; });
 
 filenames.forEach(function (filename) {
-    var data = fs.readFileSync(folder + '/' + filename)
+    var data = fs.readFileSync(dir + '/' + filename)
 
     try {
         const tags = ExifReader.load(data, { expanded: true });
