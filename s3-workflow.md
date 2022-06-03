@@ -9,7 +9,7 @@
 
 ## Workflow
 
-1. Use a photo editing app (i.e. Mac photos app) to edit photo to have an aspect ratio 16:9.  Export to a project folder  (quality high, size large)
+1. Use a photo editing app (i.e. Mac photos app) to edit photo to have an aspect ratio 16:9. Add a Title, Description in the Info for the photo (or save the file in format x-x.jpeg). Export to a project folder  (quality high, size large)
 2. Create a project bucket in s3:
 ```
 aws s3 mb s3://<project>

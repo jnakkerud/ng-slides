@@ -82,7 +82,7 @@ try {
 }
 
 function getTag(tags, group, name) {
-    if (tags[group][name]) {
+    if (tags[group] && tags[group][name]) {
         if (group === 'gps') {
             return tags[group][name];
         } else if ((group === 'Thumbnail') && (name === 'type')) {
